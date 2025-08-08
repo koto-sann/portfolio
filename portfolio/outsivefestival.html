@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>アウトドアフェスティバルバナー</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+     <!-- ヘッダー　-->
+    <header>
+    <!-- ロゴ　-->
+    <a href="index.html" id="logo"><img id="logo" src="images/logo.png" alt="トップページに戻る"></a>
+        
+    <!-- PC用ナビゲーション　-->
+    <nav id="nav-pc">
+        <ul>
+         <li><a href="index.html#top">Top</a></li>
+         <li><a href="index.html#about">About</a></li>
+         <li><a href="index.html#skill">Skill</a></li>
+         <li><a href="index.html#works">Works</a></li>
+         <li><a href="index.html#contact">Contact</a></li> 
+        </ul>
+    </nav>
+     <!-- スマホ用メニューボタン　-->
+         <button id="menu-sp" onclick="document.getElementById('nav-sp').style.display = 'block'">
+            <img class="open" src="images/hamburger.png" alt="ナビゲーションを開く">
+          </button>
+         <!-- スマホ用ナビゲーション -->
+         <div id="nav-sp">
+            <button id="close" onclick="document.getElementById('nav-sp').style.display = 'none'">
+                <img class="close" src="images/close.png" alt="ナビゲーションを閉じる">
+            </button>
+
+            <nav>
+                <ul>
+                    <a id="logo-sp" href="index.html" onclick="document.getElementById('nav-sp').style.display = 'none'"><img class="logo" src="images/logo.png" alt="Top"></a>
+                    <li><a class="menu" href="index.html#top" onclick="document.getElementById('nav-sp').style.display = 'none'">Top</a></li>
+                    <li><a class="menu" href="index.html#about" onclick="document.getElementById('nav-sp').style.display = 'none'">About</a></li>
+                    <li><a class="menu" href="index.html#skill" onclick="document.getElementById('nav-sp').style.display = 'none'">Skill</a></li>
+                    <li><a class="menu" href="index.html#works" onclick="document.getElementById('nav-sp').style.display = 'none'">Works</a></li>
+                    <li><a class="menu" href="index.html#contact" onclick="document.getElementById('nav-sp').style.display = 'none'">Contact</a></li>
+                </ul>
+            </nav>
+         </div>
+    </header>
+
+    <main>
+        <article>
+                    <section id="outsivefestival">
+                        <div id="production-outer">
+                            <div id="production-inner">
+                                <div class="heading-flex">
+                                    <div id="heading-left">
+                                        <p id="label">スクール課題</p>
+                                    </div>
+                                    <div id="heading-right">
+                                        <h3 class="index-h3">アウトドアフェスティバル バナー</h3>
+                                    </div>
+                                </div>
+                                <div class="banner">
+                                    <img class="outsivefestival-banner" src="images/production/outsivefestival.jpg" alt="アウトドアフェスティバルバナー">
+                                </div>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <th class="tableheader"><p class="summary">概要</p></th>
+                                            <td class="cell">キャンプ初心者講習会や子供も遊べるイベントがあるアウトドアフェスティバルのバナーを制作しました。</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="tableheader"><p class="purpose">目的</p></th>
+                                            <td class="cell">イベントの認知向上と集客の為。</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="tableheader"><p class="target-group">ターゲット</p></th>
+                                            <td class="cell">家族、キャンプ好きの方。</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="tableheader"><p class="point">制作のポイント</p></th>
+                                            <td class="cell">テントの画像を大きく掲載し、文字や紅葉を秋をイメージする色にすることで秋の行楽シーズンにキャンプに行きたくなるデザインに仕上げている。イベント名は中央に大きく配置することで目を引く。参加費用、会場、日付等重要な情報は文字の縁取りを行うことや夜空に配置することで視認性を高めている。</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="tableheader"><p class="period">制作期間</p></th>
+                                            <td class="cell">1日</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="tableheader"><p class="tool">使用ツール</p></th>
+                                            <td class="cell">Photoshop/Figma</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </section>
+                
+                    <div id="btn-return">
+                        <a href="works-list.html" class="works-list">一覧に戻る</a>
+                    </div>
+
+                <footer>
+                    <div class="footer-inner">
+                        <p>© 2025 Koto</p>
+                    </div>
+                </footer>
+
+        </article>
+    </main>
+</body>
+
+</html>

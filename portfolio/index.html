@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ポートフォリオサイト</title>
+
+    <!-- slickの読み込み -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+</head>
+
+<body>
+    <!-- ローディング画面 -->
+    <div id="loading">
+        <img class="spinner" src="images/spinner.png" alt="スピナー">
+        <h2 class="loading-text">Loading...</h2>
+    </div>
+
+    <!-- ローディング後のコンテンツ -->
+    <div id="after-loading">
+
+     <!-- ヘッダー　-->
+        <header>
+        <!-- ロゴ　-->
+        <a href="index.html" id="logo"><img id="logo" src="images/logo.png" alt="トップページに戻る"></a>
+        
+        <!-- PC用ナビゲーション　-->
+        <nav id="nav-pc">
+            <ul>
+             <li><a href="index.html#top">Top</a></li>
+             <li><a href="index.html#about">About</a></li>
+             <li><a href="index.html#skill">Skill</a></li>
+             <li><a href="index.html#works">Works</a></li>
+             <li><a href="index.html#contact">Contact</a></li> 
+            </ul>
+        </nav>
+
+
+        
+        <!-- スマホ用メニューボタン　-->
+         <button id="menu-sp" onclick="document.getElementById('nav-sp').style.display = 'block'">
+            <img class="open" src="images/hamburger.png" alt="ナビゲーションを開く">
+          </button>
+         <!-- スマホ用ナビゲーション -->
+         <div id="nav-sp">
+            <button id="close" onclick="document.getElementById('nav-sp').style.display = 'none'">
+                <img class="close" src="images/close.png" alt="ナビゲーションを閉じる">
+            </button>
+
+            <nav>
+                <ul>
+                    <a id="logo-sp" href="index.html" onclick="document.getElementById('nav-sp').style.display = 'none'"><img class="logo" src="images/logo.png" alt="Top"></a>
+                    <li><a class="menu" href="index.html#top" onclick="document.getElementById('nav-sp').style.display = 'none'">Top</a></li>
+                    <li><a class="menu" href="index.html#about" onclick="document.getElementById('nav-sp').style.display = 'none'">About</a></li>
+                    <li><a class="menu" href="index.html#skill" onclick="document.getElementById('nav-sp').style.display = 'none'">Skill</a></li>
+                    <li><a class="menu" href="index.html#works" onclick="document.getElementById('nav-sp').style.display = 'none'">Works</a></li>
+                    <li><a class="menu" href="index.html#contact" onclick="document.getElementById('nav-sp').style.display = 'none'">Contact</a></li>
+                </ul>
+            </nav>
+         </div>
+        </header>
+
+        <!-- main -->
+         <main>
+            <article>
+                        <!-- カルーセル -->
+                        <section id="carousel-section">
+                            <div class="carousel">
+                                <div class="carousel-item">
+                                    <p class="carousel-text">Koto’s Portfolio Site</p>
+                                    <img class="carouselImg" src="images/spring.jpg" alt="春">
+                                </div>
+                                <div class="carousel-item">
+                                    <p class="carousel-text">Koto’s Portfolio Site</p>
+                                    <img class="carouselImg" src="images/summar.jpg" alt="夏">
+                                </div>
+                                <div class="carousel-item">
+                                    <p class="carousel-text">Koto’s Portfolio Site</p>
+                                    <img class="carouselImg" src="images/autumn.jpg" alt="秋">
+                                </div>
+                                <div class="carousel-item">
+                                    <p class="carousel-text">Koto’s Portfolio Site</p>
+                                    <img class="carouselImg" src="images/winter.jpg" alt="冬">
+                                </div>
+                            </div>
+                        </section>
+                        <!-- About　-->
+                        <div class="box">
+                        <section id="about">
+                            <h2 class="index-h2">About</h2>
+                                <div class="about-outer">
+                                    <div class="about-inner">
+                                        <div class="about-flex">
+                                            <div class="about-left">
+                                                <img id="about-photo" src="images/portrait.jpg" alt="自分の似顔絵">
+                                            </div>
+                                            <div class="about-right">
+                                                <h3>K.N</h3>
+                                                <p>1999年神奈川県生まれ。<br>大学卒業後、精神科病院で作業療法士として従事。患者様にリハビリとして編み物、ビーズ等ものづくりを提供している際に今度は自分自身も達成感や充実感を味わいたいと思い、Webデザイナーを目指す。趣味は旅行、ランニング、編み物。
+                                                旅行先では思い出を写真に残すことが習慣となっており、写真のように印象に残るデザインを提案することを目標としている。</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </section>
+                        </div>
+                        <!-- Skill　-->
+                        <div class="box">
+                        <section id="skill">
+                            <h2 class="index-h2">Skill</h2>
+                                <div class="skill-inner">
+                                    <div class="skill-flex">
+                                        <div class="design">
+                                            <div class="design-inside">
+                                                <img class="skill-photo" src="images/design.jpg" alt="イラスト">
+                                                <h3>・Design・</h3>
+                                                <p>Photoshop 
+                                                <br>Figma</p>
+                                            </div>
+                                        </div>
+                                        <div class="coding">
+                                            <div class="coding-inside">
+                                                <img class="skill-photo" src="images/coding.jpg" alt="コーディングしている男性">
+                                                <h3>・Coding・</h3>
+                                                <div class="coding-flex">
+                                                    <div class="coding-left">
+                                                        <span>フロントサイド</span>
+                                                        <p>HTML<br>CSS<br>JavaScript<br>jQuery</p>
+                                                    </div>
+                                                    <div class="coding-right">
+                                                        <span>サーバーサイド</span>
+                                                        <p>PHP<br>WordPress</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div> 
+                        <!-- Works -->
+                        <div class="box">
+                        <section id="works">
+                            <h2 class="index-h2">Works</h2>
+                                <div class="works-inner">
+                                    <div class="flexbox-container">
+                                        <div>
+                                            <a href="chocolate.html"><img class="works-photo" src="images/top/chocolate.jpg" alt="チョコレート菓子"></a>
+                                        </div>
+                                        <div>
+                                            <a href="outsivefestival.html"><img class="works-photo" src="images/top/outsivefestival.jpg" alt="アウトドアフェスティバル"></a>
+                                        </div>
+                                        <div>
+                                            <a href="thumbnail.html"><img class="works-photo" src="images/top/thumbnail.jpg" alt="動画サムネイル"></a>
+                                        </div>
+                                        <div>
+                                            <a href="cosmetics.html"><img class="works-photo" src="images/top/cosmetics.jpg" alt="化粧品"></a>
+                                        </div>
+                                        <div>
+                                            <a href="corporate-website.html"><img class="works-photo" src="images/top/corporate-website.jpg" alt="コーポレートサイト"></a>
+                                        </div>
+                                        <div>
+                                            <a href="sweets-store.html"><img class="works-photo" src="images/top/sweets-store.jpg" alt="スイーツ専門店"></a>
+                                        </div>
+                                    </div>
+                                    <div id="btn-more">
+                                        <a href="works-list.html" class="more">一覧ページへ</a>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <!-- Contact -->
+                        <div class="box">
+                            <section id="contact">
+                                <h2 class="index-h2">Contact</h2>
+                                    <div class="contact-outer">
+                                        <div class="contact-inner">
+                                            <div class="contact-flex">
+                                                <div>
+                                                    <img class="contact-photo" src="images/A woman pulling a suitcase.png" alt="キャリーケースを引く女性">
+                                                </div>
+                                                <div id="contact-right">
+                                                    <h3 class="address">&ensp;<a href="m&#97;i&#108;t&#111;:&#110;.ko5&#116;o&#49;8&#64;g&#109;a&#105;l&#46;&#99;&#111;&#109;" class="g-mail">&#110;.ko5&#116;o&#49;8&#64;g&#109;a&#105;l&#46;&#99;&#111;&#109;</a>&ensp;</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </section>
+                        </div>
+                        <!-- フッター -->
+                        <footer>
+                            <div class="footer-inner">
+                                <p>© 2025 Koto</p>
+                            </div>
+                        </footer>
+
+                          <!-- トップに戻るボタン -->
+                        <button class="page-top">TOP</button>
+
+                        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        
+                    </article>
+                    </main>
+
+                    <!-- slickの読み込み -->
+                    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+                    <script src="script.js"></script>
+
+    <!-- ローディング後のコンテンツ閉じタグ -->
+    </div>
+                
+</body>
+
+
+
+</div>
+</html>

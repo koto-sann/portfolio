@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>チョコレート菓子バナー</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+     <!-- ヘッダー　-->
+        <header>
+        <!-- ロゴ　-->
+        <a href="index.html" id="logo"><img id="logo" src="images/logo.png" alt="トップページに戻る"></a>
+        
+        <!-- PC用ナビゲーション　-->
+        <nav id="nav-pc">
+            <ul>
+             <li><a href="index.html#top">Top</a></li>
+             <li><a href="index.html#about">About</a></li>
+             <li><a href="index.html#skill">Skill</a></li>
+             <li><a href="index.html#works">Works</a></li>
+             <li><a href="index.html#contact">Contact</a></li> 
+            </ul>
+        </nav>
+         <!-- スマホ用メニューボタン　-->
+         <button id="menu-sp" onclick="document.getElementById('nav-sp').style.display = 'block'">
+            <img class="open" src="images/hamburger.png" alt="ナビゲーションを開く">
+          </button>
+         <!-- スマホ用ナビゲーション -->
+         <div id="nav-sp">
+            <button id="close" onclick="document.getElementById('nav-sp').style.display = 'none'">
+                <img class="close" src="images/close.png" alt="ナビゲーションを閉じる">
+            </button>
+
+            <nav>
+                <ul>
+                    <a id="logo-sp" href="index.html" onclick="document.getElementById('nav-sp').style.display = 'none'"><img class="logo" src="images/logo.png" alt="Top"></a>
+                    <li><a class="menu" href="index.html#top" onclick="document.getElementById('nav-sp').style.display = 'none'">Top</a></li>
+                    <li><a class="menu" href="index.html#about" onclick="document.getElementById('nav-sp').style.display = 'none'">About</a></li>
+                    <li><a class="menu" href="index.html#skill" onclick="document.getElementById('nav-sp').style.display = 'none'">Skill</a></li>
+                    <li><a class="menu" href="index.html#works" onclick="document.getElementById('nav-sp').style.display = 'none'">Works</a></li>
+                    <li><a class="menu" href="index.html#contact" onclick="document.getElementById('nav-sp').style.display = 'none'">Contact</a></li>
+                </ul>
+            </nav>
+         </div>
+        </header>
+
+        <main>
+        <article>
+                    <section id="outsivefestival">
+                        <div id="production-outer">
+                            <div id="production-inner">
+                                <div class="heading-flex">
+                                    <div id="heading-left">
+                                        <p id="label">スクール課題</p>
+                                    </div>
+                                    <div id="heading-right">
+                                        <h3 class="index-h3">チョコレート菓子 バナー</h3>
+                                    </div>
+                                </div>
+                                <div class="banner">
+                                    <img class="chocolate-banner" src="images/production/chocolate.jpg" alt="チョコレート菓子バナー">
+                                </div>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <th class="tableheader"><p class="summary">概要</p></th>
+                                            <td class="cell">架空のチョコレート菓子の新商品のバナーを制作しました。</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="tableheader"><p class="purpose">目的</p></th>
+                                            <td class="cell">新商品のポイント、良さを伝え購入促進に繋げるため。</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="tableheader"><p class="target-group">ターゲット</p></th>
+                                            <td class="cell">20〜30代のコンビニを利用する女性で少し高級なチョコレートを求める方。</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="tableheader"><p class="point">制作のポイント</p></th>
+                                            <td class="cell">Z型の視線を意識して文字を配置しています。背景は深緑の布を使用し高級感を演出しています。商品名や割引率等重要な情報はグラデーションで強調しながらもまとまりあるバナーに仕上げています。</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="tableheader"><p class="period">制作期間</p></th>
+                                            <td class="cell">３時間</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="tableheader"><p class="tool">使用ツール</p></th>
+                                            <td class="cell">Photoshop</td>
+                                        </tr>
+                                    </tbody>
+                                 </table>     
+                            </div>
+                        </div>          
+                    </section>
+                
+                    <div id="btn-return">
+                        <a href="works-list.html" class="works-list">一覧に戻る</a>
+                    </div>
+
+                    <footer>
+                        <div class="footer-inner">
+                            <p>© 2025 Koto</p>
+                        </div>
+                    </footer>
+
+        </article>
+    </main>
+</body>
+
+</html>
