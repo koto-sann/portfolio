@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>404ページが見つかりません</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kiwi+Maru&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Playwrite+HU:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+</head>
+
+<body>
+     <!-- ヘッダー　-->
+    <header>
+
+        <!-- ロゴ　-->
+        <a href="index.html" id="logo"><img id="logo" src="images/logo.png" alt="トップページに戻る"></a>
+        
+        <!-- PC用ナビゲーション　-->
+        <nav id="nav-pc">
+            <ul>
+             <li><a href="index.html#top">Top</a></li>
+             <li><a href="index.html#about">About</a></li>
+             <li><a href="index.html#skill">Skill</a></li>
+             <li><a href="index.html#works">Works</a></li>
+             <li><a href="index.html#contact">Contact</a></li> 
+            </ul>
+        </nav>
+         <!-- SP版ナビゲーション -->
+        <nav class="menu">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul>
+                <li><a class=list href="index.html#top" onclick="document.getElementById('menu').style.display = 'none'">Top</a></li>
+                <li><a class=list href="index.html#about" onclick="document.getElementById('menu').style.display = 'none'">About</a></li>
+                <li><a class=list href="index.html#skill" onclick="document.getElementById('menu').style.display = 'none'">Skill</a></li>
+                <li><a class=list href="index.html#works" onclick="document.getElementById('menu').style.display = 'none'">Works</a></li>
+                <li><a class=list href="index.html#contact" onclick="document.getElementById('menu').style.display = 'none'">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    
+    <main>
+        <article>
+                    <section id="error">
+                        <div id="error-body">
+                        <div id="error-outer">
+                            <div id="error-inner">
+                                <h2 id="error">404</h2>
+                                <p>お探しのページが見つかりません。<br>トップから再度アクセスしてください。</p>
+                                <a href="index.html" class="btn">クリック</a>
+                            </div>
+                        </div>
+                        </div>
+                    </section>
+
+                    <footer>
+                        <div class="footer-inner">
+                            <p>© 2025 Koto</p>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </article>
+    </main>
+
+</body>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+</html>
+
+                    

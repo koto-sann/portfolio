@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>スイーツ専門店LP</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+     <!-- ヘッダー　-->
+        <header>
+        <!-- ロゴ　-->
+        <a href="index.html" id="logo"><img id="logo" src="images/logo.png" alt="トップページに戻る"></a>
+        
+        <!-- PC用ナビゲーション　-->
+        <nav id="nav-pc">
+            <ul>
+             <li><a href="index.html#top">Top</a></li>
+             <li><a href="index.html#about">About</a></li>
+             <li><a href="index.html#skill">Skill</a></li>
+             <li><a href="index.html#works">Works</a></li>
+             <li><a href="index.html#contact">Contact</a></li> 
+            </ul>
+        </nav>
+         <!-- スマホ用メニューボタン　-->
+         <button id="menu-sp" onclick="document.getElementById('nav-sp').style.display = 'block'">
+            <img class="open" src="images/hamburger.png" alt="ナビゲーションを開く">
+          </button>
+         <!-- スマホ用ナビゲーション -->
+         <div id="nav-sp">
+            <button id="close" onclick="document.getElementById('nav-sp').style.display = 'none'">
+                <img class="close" src="images/close.png" alt="ナビゲーションを閉じる">
+            </button>
+
+            <nav>
+                <ul>
+                    <a id="logo-sp" href="index.html" onclick="document.getElementById('nav-sp').style.display = 'none'"><img class="logo" src="images/logo.png" alt="Top"></a>
+                    <li><a class="menu" href="index.html#top" onclick="document.getElementById('nav-sp').style.display = 'none'">Top</a></li>
+                    <li><a class="menu" href="index.html#about" onclick="document.getElementById('nav-sp').style.display = 'none'">About</a></li>
+                    <li><a class="menu" href="index.html#skill" onclick="document.getElementById('nav-sp').style.display = 'none'">Skill</a></li>
+                    <li><a class="menu" href="index.html#works" onclick="document.getElementById('nav-sp').style.display = 'none'">Works</a></li>
+                    <li><a class="menu" href="index.html#contact" onclick="document.getElementById('nav-sp').style.display = 'none'">Contact</a></li>
+                </ul>
+            </nav>
+         </div>
+        </header>
+
+        <main>
+            <article>
+                    <section id="outsivefestival">
+                        <div id="production-outer">
+                            <div id="production-inner">
+                                <div class="heading-flex">
+                                    <div id="heading-left">
+                                        <p id="label">スクール課題</p>
+                                    </div>
+                                    <div id="heading-right">
+                                        <h3 class="index-h3">スイーツ専門店LP（模写）</h3>
+                                    </div>
+                                </div>
+                                <div class="explain-flex">
+                                    <div>
+                                        <img class="production-photo" src="images/production/sweets-store.png" alt="スイーツ専門店LP">
+                                    </div>
+                                    <div>
+                                        <div id="works-explain">
+                                            <p id="summary">概要</p><p>架空のスイーツ専門店のLPのデザイン模写を行いました。</p>
+                                            <p id="purpose">目的</p><p>Webサイトへの訪問者の増加を促すため。購入、来店予約、お問い合わせなどに誘導するため。</p>
+                                            <p id="target-group">ターゲット</p><p>莓スイーツ好きな女性。</p>
+                                            <p id="point">制作のポイント</p><p>トップページやMenu背景はペンツールでシェイプを生成してグラデーションをつけることが難易度が高かったです。</p>
+                                            <p id="period">制作期間</p><p>2日</p>
+                                            <p id="tool">使用ツール</p><p>Photoshop</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="body-inner">
+                            <div id="body-flex">
+                                <div>
+                                    <img id="LP-left" src="images/sweets-store-left.jpg" alt="スイーツ専門店LP本体左">
+                                </div>
+                                <div>
+                                    <img id="LP-right" src="images/swets-store-right.jpg" alt="スイーツ専門店LP本体右">
+                                </div>
+                            </div>
+                        </div>
+                        </section>
+
+                    <div id="btn-return">
+                        <a href="works-list.html" class="works-list">一覧に戻る</a>
+                    </div>
+
+                <footer>
+                    <div class="footer-inner">
+                        <p>© 2025 Koto</p>
+                    </div>
+                </footer>
+
+        </article>
+    </main>
+</body>
+
+</html>
